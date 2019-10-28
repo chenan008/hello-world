@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册-美食天下</title>
+    <meta name="discription" content="美食天下是最大的中文美食网站与厨艺交流社区，拥有海量的优质原创美食菜谱，聚集超千万美食家。我所有的朋友都是吃货，欢迎您加入！">
+    <meta name="keywords" content="美食,菜谱,烹饪,家常菜谱大全,美食网,美食天下">
+    <meta name="render" content="webkit">
+    <link rel="shortcut icon" href="./image/p5/f.ico">
+    <link rel="stylesheet" type="text/css" href="css/basics.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <style>
+    body {
+            margin:0;
+            padding:0;
+            width:100%;
+            height:100%;
+            position: fixed;
+        }
+        #img{
+            vertical-align: middle;
+            z-index: -2;
+        }
+        #Mask{
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 100%;
+            height:100%;
+            background: transparent url('./image/p11/overlays.png');
+            opacity: .5;
+            z-index: -1;
+        }
+        .register{
+            width: 530px;
+            height: 236px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin-left:-265px;
+            margin-top:-118px;
+            border-radius: 5px;
+            overflow: hidden;
+            font-size: 14px;
+            background-color: rgba(255,255,255,0.8);
+        }
+        .register_login{
+            width: 530px;
+            height:50px;
+            border-radius: 10px 0 0 10px;
+        }
+        .register_login a{
+            float: left;
+            width: 50%;
+            line-height: 50px;
+            text-align: center;
+            font-size: 20px;
+            color:#000;
+        }
+        .register_login a:hover{
+            color:#ff6767;
+            text-decoration: underline;
+        }
+        .register_login .on{
+            background-color: rgba(0,0,0,0.5);
+            color:#fff;
+        }
+        .register_box_l{
+            width: 300px;
+            float: left;
+            border-right:1px solid #999;
+            margin-top:20px;
+            padding:0 20px;
+        }
+        .register_icon{
+            width: 220px;
+            height: 60px;
+            margin:10px 20px;
+        }
+        .register_icon a{
+            display: block;
+            float: left;
+            width: 30px;
+            height: 30px;
+            font-size: 14px;
+            color:#000;
+        }
+        .register_icon .a1{
+            margin:5px;
+            line-height: 7;
+            text-align: center;
+            background: url('./image/p5/nir1.png')no-repeat center/cover;
+        }
+        .register_icon .a2{
+            margin:5px 40px;
+            line-height: 7;
+            text-align: center;
+            background: url('./image/p5/nir3.png')no-repeat center/cover;
+        }
+        .register_icon .a3{
+            margin:5px;
+            line-height: 7;
+            text-align: center;
+            background: url('./image/p5/nir2.png')no-repeat center/cover;
+        }
+        .register_box_r{
+            width: 165px;
+            float: left;
+            text-align: center;
+            margin:10px;
+        }
+        .register_box_r img{
+            width: 110px;
+            height: 110px;
+            margin-top:10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<div id='Mask'></div>
+<img src="./image/p11/1.jpg" alt="" id='img'>
+<div class="top-bar clearfix" id="j_top_bar">
+    <ul class="bar-left fl">
+        <li><a href="index.html" target='_blank' class="log"><i>美食天下</i>首页</a></li>
+        <li><a href="#">菜谱</a></li>
+        <li><a href="#">食材</a></li>
+        <li><a href="#">珍选</a></li>
+        <li><a href="#">健康</a></li>
+        <li><a href="#">专题</a></li>
+        <li><a href="#">社区</a></li>
+        <li><a href="#">话题</a></li>
+        <li><a href="#">活动</a></li>
+        <li><a href="#">搜索</a></li>
+        <li class="top-bar-more" id="more">
+            <i></i>
+            <div class="more-list">
+                <a href="#">烘焙</a>
+                <a href="#">妈妈派</a>
+            </div>
+        </li>
+    </ul>
+    <div class="bar-right fr">
+        <ul>
+            <li class="bar-link"><a href="register.html">注册</a></li>
+            <li class="bar-link"><a href="login.html">登录</a></li>
+            <li class="qq_login">
+                <div class="bar-text">
+                    <a href="#"><img src="image/p5/nir1.png" width="18" height="18">QQ登录</a>
+                </div>
+                <div class="bar-box">
+                    <ul>
+                        <li class="bar-box-item0"><a href="#"><img src="image/p5/nir2.png" width="18" height="18">微博登录</a></li>
+                        <li><a href="#"><img src="image/p5/nir3.png" width="18" height="18">微信登录</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="bar-release">
+                <div class="bar-text">
+                    <a href="#"><img src="image/p5/nr1.png" width="18" height="18">发布</a>
+                </div>
+                <div class="bar-box">
+                    <ul>
+                        <li class="bar-box-item0"><a href="#">发布菜谱</a></li>
+                        <li class="bar-box-item1"><a href="#">发布话题</a></li>
+                        <li class="bar-box-item2"><a href="#">发布日志</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="bar-gift"><a href="#"><img src="image/p5/nr2.png">签到有礼</a></li>
+            <li class="bar-client">
+                <a href="#" class="client"><img src="image/p5/nr3.png">客户端</a>
+                <div class="erweima">
+                    <a href="#"><img src="image/p5/msc_app.png"></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>  
+ <div class="register">
+    <div class="register_login">
+        <a href="register.html">注册</a>
+        <a href="login.html"  class='on'>登录</a>
+    </div>
+    <div class="register_box_l">
+        <p style="padding:5px;">欢迎使用第三方账号注册/登录美食天下</p>
+        <div class="register_icon">
+            <a href="#" class='a1'>QQ</a>
+            <a href="#" class='a2'>微信</a>
+            <a href="#" class='a3'>微博</a>
+        </div>
+    </div>
+    <div class="register_box_r">
+        <img src="./image/p5/msc_app.png" alt="">
+        <p>扫描二维码下载客户端</p>
+    </div>
+ </div>
+</body>
+<script>
+    var picArr = [
+    "./image/p11/1.jpg",
+    "./image/p11/2.jpg",
+    "./image/p11/3.jpg",
+    "./image/p11/4.jpg",
+    ]
+    var body = document.body
+    var index = 0
+    var oImg = document.getElementById('img')
+    var timer = null
+    function autoPlay(){
+        timer = setInterval(function(){
+            oImg.style.transition = 'opacity 1s ease-in 0s' 
+            oImg.style.opacity = 0.2 
+            setTimeout(function(){
+                oImg.src = picArr[index]
+                oImg.style.transition = 'opacity 1s ease-out'
+                oImg.style.opacity = 1 
+            },1000)
+            setTimeout(function(){
+                oImg.style.transition = 'none'
+            },3000)
+            if(++index>picArr.length-1){
+                index = 0
+            }
+        },5000)
+    }
+    autoPlay()
+    function show(){
+        var W = document.body.clientWidth
+        var H = document.body.clientHeight
+        oImg.style.cssText = 'width:'+W+'px'+';height:'+H+'px'+';position:fixed;top:0;left:0;right:auto;bottom:auto;object-fit:cover'
+    }
+    window.onresize = function(){
+        show()
+    }
+    window.onload = function(){
+        show()
+    }
+</script>
+</html>
